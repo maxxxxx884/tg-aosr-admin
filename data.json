@@ -1,0 +1,439 @@
+[
+    {
+        "data_name": "Номер приказа о назначении ответственного за строительный контроль TEST",
+        "file": "Дирекция заказчика/4 Приказы на ответственных лиц/вмнесто приказа.pdf",
+        "type": "pdf",
+        "keywords": [
+            "Номер счета на оплату"
+        ],
+        "extracted_value": "265",
+        "status": "found"
+    },
+    {
+        "data_name": "ИНН TEST",
+        "file": "Дирекция заказчика/3 Карточка предпрятия/Карточка_организации_АБЕОНА_СБ_Сбербанк_3.docx",
+        "type": "word",
+        "keywords": [
+            "инн"
+        ],
+        "extracted_value": "7735525751",
+        "status": "found"
+    },
+    {
+        "data_name": "наименование СРО TEST",
+        "file": "Дирекция заказчика/2 Информаця о СРО/типа сро(просто для теста excel парсинга).xlsx",
+        "type": "excel",
+        "keywords": [
+            "Наименование саморегулироемой организации лица подготавливающего проектную докуметацию"
+        ],
+        "extracted_value": "Ассоциация проектировщиков \"Альянс проектировщиков",
+        "status": "found"
+    },
+    {
+        "data_name": "Полное наименоване ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Полное наименование организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Сокращенное наименование ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Сокращенное наименование организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Юр адрес ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Юридический адес"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Тел ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Телефон/факс"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ИНН ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ИНН"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ОГРН ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ОГРН"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Наименование СРО ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Наименование саморегулироемой организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ОГРН СРО ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ОГРН саморегулироемой организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ИНН СРО ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ИНН саморегулироемой организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Должность ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Дожность назначаемого лица в приказе"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ФИО ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Фамилия инициалы назначаемого лица в приказе"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Номер прик за авторский надзор ПГ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Номер приказа"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Полное наименоване ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Полное наименование организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Сокращенное наименование ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Сокращенное наименование организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Юр адрес ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Юридический адес"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Тел ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Телефон/факс"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ИНН ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ИНН"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ОГРН ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ОГРН"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Наименование СРО ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Наименование саморегулироемой организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ОГРН СРО ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ОГРН саморегулироемой организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ИНН СРО ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ИНН саморегулироемой организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Должность ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Дожность назначаемого лица в приказе"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ФИО ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Фамилия инициалы назначаемого лица в приказе"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Номер прик ответственного лица ДЗ",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Номер приказа"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Полное наименоване ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Полное наименование организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Сокращенное наименование ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Сокращенное наименование организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Юр адрес ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Юридический адес"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Тел ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Телефон/факс"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ИНН ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ИНН"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ОГРН ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ОГРН"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Наименование СРО ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Наименование саморегулироемой организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ОГРН СРО ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ОГРН саморегулироемой организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ИНН СРО ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "ИНН саморегулироемой организации"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Наименование объекта ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "НАименование объекта"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Должность ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Дожность назначаемого лица в приказе"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "ФИО ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Фамилия инициалы назначаемого лица в приказе"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    },
+    {
+        "data_name": "Номер прик ответственного лица ДС",
+        "file": "",
+        "type": "",
+        "keywords": [
+            "Номер приказа"
+        ],
+        "extracted_value": "null",
+        "status": "not_found",
+        "reason": "Файл не указан или не найден"
+    }
+]

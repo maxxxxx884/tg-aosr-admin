@@ -1,0 +1,491 @@
+[
+    {
+        "data_name": "Полное наименоване ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Полное наименование организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "ООО \"Сретенка Констракшн Менеджмент\"",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Сокращенное наименование ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Сокращенное наименование организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "ООО \"СКМ\"",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Юр адрес ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Юридический адес лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "117218, г. Москва, ул. Кржижановского, д. 15 кор. 5, эт. 5, ком. 511, офис 4",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Тел ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Телефон/факс лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "+7 (495) 897-14-75",
+        "status": "found",
+        "reason": "Информация о телефоне не указана в документах"
+    },
+    {
+        "data_name": "ИНН ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ИНН лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "7727434892",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ОГРН ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ОГРН лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "1197746711931",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Наименование СРО ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Наименование саморегулироемой организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "Ассоциация проектировщиков \"Альянс проектировщиков профессионалов\" (сокр. Наимен. СРО АП \"АПП\")",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ОГРН СРО ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ОГРН саморегулироемой организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "1097799013971",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ИНН СРО ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ИНН саморегулироемой организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "7716239160",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Должность ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Дожность лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "Вед. Архитектор",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ФИО ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Фамилия инициалы лица подготавливающего проектную документацию"
+        ],
+        "extracted_value": "Лашук К.С.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Номер прик за авторский надзор ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Номер приказа о назначении лица подготавливающего проектную документацию и дата от какого числа приказ"
+        ],
+        "extracted_value": "№1/СКМ/24 от 17.11.2024 г.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Номер НОПРИЗ за авторский надзор ПГ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Номер в реестре (пример №П-000000) и дата от какго числа"
+        ],
+        "extracted_value": "№П-047900 от 14.12.2023 г.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Полное наименоване ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Полное наименование организации представителя заказчика"
+        ],
+        "extracted_value": "ООО \"Сретенка Констракшн Менеджмент\"",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Сокращенное наименование ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Сокращенное наименование организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "ООО \"СКМ\"",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Юр адрес ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Юридический адес лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "117218, г. Москва, ул. Кржижановского, д. 15 кор. 5, эт. 5, ком. 511, офис 4",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Тел ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Телефон/факс организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "+7 (495) 897-14-75",
+        "status": "found",
+        "reason": "Информация о телефоне не указана в документах"
+    },
+    {
+        "data_name": "ИНН ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ИНН организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "7727434892",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ОГРН ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ОГРН организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "1197746711931",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Наименование СРО ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Наименование саморегулироемой организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "Ассоциация строителей \"Альянс строителей профессионалов\" (сокр. наимен. СРО АС \"АСП\")",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ОГРН СРО ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ОГРН саморегулироемой организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "1097799013707",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ИНН СРО ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ИНН саморегулироемой организации лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "7730183455",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Должность ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Дожность назначаемого лица в приказе лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "Главный инженер",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ФИО ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Фамилия инициалы назначаемого лица в приказе лица подгтавливающего проектную документацию"
+        ],
+        "extracted_value": "Калина Е.Д.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Номер прик ответственного лица ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Номер приказа лица подгтавливающего проектную документацию и дата его составления (Прим: №12475 от 12.11.2002)"
+        ],
+        "extracted_value": "№2/СКМ/24 от 17.11.2024 г.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Номер НРС ответственного лица ДЗ",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Номер в национальном реестре строителей лица подгтавливающего проектную документацию (Ghbлица подгтавливающего проектную документацию (Начинасется №С )"
+        ],
+        "extracted_value": "№С-50-188016 от 31.01.2024 г.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Полное наименоване ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Полное наименование организации Представитель лица",
+            "осуществляющего строительство"
+        ],
+        "extracted_value": "ООО \"Бау Экспертиз Прожектиерунг\"",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Сокращенное наименование ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Сокращенное наименование организации Представитель лица",
+            "осуществляющего строительство"
+        ],
+        "extracted_value": "ООО \"БЭП\"",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Юр адрес ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Юридический адес Представитель лица",
+            "осуществляющего строительство"
+        ],
+        "extracted_value": "117218, г. Москва, ул. Кржижановского, д. 15 кор. 5, эт. 5, ком. 410А, офис 1",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Тел ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Телефон/факс Представитель лица",
+            "осуществляющего строительство"
+        ],
+        "extracted_value": "+7 (495) 897-74-54",
+        "status": "found",
+        "reason": "Информация о телефоне не указана в документах"
+    },
+    {
+        "data_name": "ИНН ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ИНН Представитель лица",
+            "осуществляющего строительство"
+        ],
+        "extracted_value": "7701529116",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ОГРН ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ОГРН Представитель лица",
+            "осуществляющего строительство"
+        ],
+        "extracted_value": "1047796183181",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Наименование СРО ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Наименование саморегулироемой организации Представитель лица",
+            "осуществляющего строительство"
+        ],
+        "extracted_value": "Ассоциация строителей \"Альянс строителей профессионалов\" (сокр. наимен. СРО АС \"АСП\")",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ОГРН СРО ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ОГРН саморегулироемой организации Представитель лица",
+            "осуществляющего строительство"
+        ],
+        "extracted_value": "1097799013707",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ИНН СРО ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "ИНН саморегулироемой организации Представитель лица",
+            "осуществляющего строительство"
+        ],
+        "extracted_value": "7730183455",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Наименование объекта по договору ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "наименование объекта капитального строительства в соответствии с проектной документацией"
+        ],
+        "extracted_value": "Жилой дом с помещениями редакции издательского дома \"Литературная газета\" по адресу: г. Москва, ЦАО, Костянский пер., вл. 13,стр. 1",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Должность ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Дожность назначаемого лица в приказе Лицо",
+            "осуществляющее строительство"
+        ],
+        "extracted_value": "Директор по строительству",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ФИО ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Фамилия инициалы назначаемого лица в приказе Лицо",
+            "осуществляющее строительство"
+        ],
+        "extracted_value": "Аверин Е.А.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Номер прик ответственного лица ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Номер приказа Лицо",
+            "осуществляющее строительство"
+        ],
+        "extracted_value": "№ 07/03-2025 от 07.03.2025 г.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Должность СК ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Дожность назначаемого за строительный контроль в приказе Лицо",
+            "осуществляющее строительство"
+        ],
+        "extracted_value": "Зам. Генерального директора по производству",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "ФИО СК ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Фамилия инициалы назначаемого лица за строительный контроль Лицо",
+            "осуществляющее строительствов приказе"
+        ],
+        "extracted_value": "Григорьев А.В.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Номер прик ответственного лица СК ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Номер приказа Лицо",
+            "осуществляющее строительство ответтвенного за троительный контроль"
+        ],
+        "extracted_value": "№ 09/01-2025 от 09.01.2025 г.",
+        "status": "found",
+        "reason": ""
+    },
+    {
+        "data_name": "Номер НРС ответственного лица СК ДС",
+        "file": "Лист Microsoft Excel.xlsx",
+        "type": "excel",
+        "keywords": [
+            "Номер в национальном реестре строителей ответственного за строительный контроль Лицо",
+            "осуществляющее строительство (Начинается с №С)"
+        ],
+        "extracted_value": "№ С-59283912 от 08.05.2024 г.",
+        "status": "found",
+        "reason": ""
+    }
+]
