@@ -56,8 +56,8 @@ class IncomingJournalEditor:
         tree_frame = ttk.Frame(self.root)
         tree_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
 
-        # Столбцы таблицы для журнала входного контроля (добавлен "Проверка док.")
-        self.columns = ("Подрядчик", "Дата", "Наименование материала", "Количество", "Ед. изм.",
+        # Столбцы таблицы для журнала входного контроля (добавлены "Оси" и "Отметки")
+        self.columns = ("Подрядчик", "Дата", "Наименование материала", "Оси", "Отметки", "Количество", "Ед. изм.",
                         "Поставщик", "Документ", "Проверка кач.", "Файлы", "Лаб. контроль", "Результат лаб.",
                         "Исполнитель", "Создано")
 
@@ -66,11 +66,13 @@ class IncomingJournalEditor:
             "Подрядчик": "contractor",
             "Дата": "date",
             "Наименование материала": "name",
+            "Оси": "axes",
+            "Отметки": "marks",
             "Количество": "quantity",
             "Ед. изм.": "quantity_unit",
             "Поставщик": "supplier",
             "Документ": "document",
-            "Проверка кач.": "document_check_result",  # Добавлено новое поле
+            "Проверка кач.": "document_check_result",
             "Файлы": "document_files",
             "Лаб. контроль": "lab_control_needed",
             "Результат лаб.": "lab_control_result",
@@ -78,15 +80,15 @@ class IncomingJournalEditor:
             "Создано": "created_at"
         }
 
-        # Редактируемые столбцы (добавлено "Проверка док.")
-        self.editable_columns = {"Дата", "Наименование материала", "Количество", "Ед. изм.",
+        # Редактируемые столбцы (добавлены "Оси" и "Отметки")
+        self.editable_columns = {"Дата", "Наименование материала", "Оси", "Отметки", "Количество", "Ед. изм.",
                                  "Поставщик", "Документ", "Проверка кач.", "Лаб. контроль", "Результат лаб.",
                                  "Исполнитель"}
 
         self.tree = ttk.Treeview(tree_frame, columns=self.columns, show='headings', height=20)
 
-        # Настройка заголовков и ширины столбцов (добавлена ширина для нового столбца)
-        column_widths = [100, 80, 180, 80, 60, 120, 100, 100, 60, 80, 100, 120, 120]
+        # Настройка заголовков и ширины столбцов (добавлены ширины для новых столбцов)
+        column_widths = [100, 80, 180, 60, 60, 80, 60, 120, 100, 100, 60, 80, 100, 120, 120]
         for i, col in enumerate(self.columns):
             self.tree.heading(col, text=col, command=lambda c=col: self.sort_by_column(c))
             self.tree.column(col, width=column_widths[i])
@@ -195,11 +197,13 @@ class IncomingJournalEditor:
                 entry.get('contractor', ''),
                 entry.get('date', ''),
                 entry.get('name', ''),
+                entry.get('axes', ''),
+                entry.get('marks', ''),
                 quantity_display,
                 entry.get('quantity_unit', ''),
                 entry.get('supplier', ''),
                 entry.get('document', ''),
-                doc_check,  # Новый столбец
+                doc_check,
                 files_text,
                 lab_control,
                 entry.get('lab_control_result', ''),
@@ -304,7 +308,7 @@ class IncomingJournalEditor:
             self.entry_widget = ttk.Combobox(self.tree, values=["Да", "Нет"], state="readonly")
             self.entry_widget.place(x=x, y=y, width=width, height=height)
             self.entry_widget.set(current_value)
-        # Для поля "Проверка док." создаем комбобокс с типичными значениями
+        # Для поля "Проверка кач." создаем комбобокс с типичными значениями
         elif column_name == "Проверка кач.":
             self.entry_widget = ttk.Combobox(self.tree,
                                              values=["соответствует", "не соответствует", "требует доработки",
@@ -473,14 +477,16 @@ class IncomingJournalEditor:
                 "№ п/п",  # 1
                 "Дата доставки",  # 2
                 "Наименование деталей, материалов, изделий, конструкций, оборудования",  # 3
-                "Кол-во",  # 4
-                "Ед. изм.",  # 5
-                "Поставщик",  # 6
-                "Наименование и номер документа изготовителя",  # 7
+                "Оси",  # 4
+                "Отметки",  # 5
+                "Кол-во",  # 6
+                "Ед. изм.",  # 7
+                "Поставщик",  # 8
+                "Наименование и номер документа изготовителя",  # 9
                 "Результат проверки сопроводительных документов производителя и визуального осмотра на соответствие требованиям утвержденной проектной документации и соответствующим документам по стандартизации",
-                # 8
-                "Решение о необходимости проведения лабораторного контроля",  # 9
-                "Результат лабораторного контроля",  # 10
+                # 10
+                "Решение о необходимости проведения лабораторного контроля",  # 11
+                "Результат лабораторного контроля",  # 12
                 # Остальные столбцы в произвольном порядке
                 "Исполнитель",
                 "Подрядчик",
@@ -507,13 +513,15 @@ class IncomingJournalEditor:
                 cell.alignment = header_alignment
                 cell.border = border
 
-            # Записываем данные
+            # Write data
             current_row = 2
-            material_number = 0  # Счетчик для нумерации материалов
+            material_number = 0  # Counter for material numbering
 
             for entry in sorted_data:
                 date_value = entry.get('date', '')
                 name_value = entry.get('name', '')
+                axes_value = entry.get('axes', '')
+                marks_value = entry.get('marks', '')
 
                 # Увеличиваем номер материала
                 material_number += 1
@@ -538,17 +546,19 @@ class IncomingJournalEditor:
                 display_date = date_value
 
                 row_data = [
-                    material_number,  # 1. № п/п
-                    display_date,  # 2. Дата доставки (теперь для каждого материала)
-                    name_value,  # 3. Наименование деталей, материалов...
-                    quantity_value,  # 4. Кол-во
-                    unit_value,  # 5. Ед. изм.
-                    supplier_value,  # 6. Поставщик
-                    document_value,  # 7. Наименование и номер документа изготовителя
-                    doc_check_value,  # 8. Результат проверки сопроводительных документов...
-                    lab_control_value,  # 9. Решение о необходимости проведения лабораторного контроля
-                    lab_result_value,  # 10. Результат лабораторного контроля
-                    # Остальные столбцы
+                    material_number,  # 1. N p/p
+                    display_date,  # 2. Date of delivery (now for each material)
+                    name_value,  # 3. Name of parts, materials, products, structures, equipment...
+                    axes_value,  # 4. Axes
+                    marks_value,  # 5. Marks
+                    quantity_value,  # 6. Quantity
+                    unit_value,  # 7. Unit
+                    supplier_value,  # 8. Supplier
+                    document_value,  # 9. Name and number of manufacturer's document
+                    doc_check_value,  # 10. Result of checking accompanying documents...
+                    lab_control_value,  # 11. Decision on the need for laboratory control
+                    lab_result_value,  # 12. Laboratory control result
+                    # Other columns
                     executor_value,
                     contractor_value,
                     files_count if files_count > 0 else "",
@@ -561,31 +571,33 @@ class IncomingJournalEditor:
                     cell.border = border
 
                     # Выравнивание для разных типов столбцов
-                    if col in [1, 4, 13]:  # № п/п, Кол-во, Количество файлов
+                    if col in [1, 4, 5, 6, 15]:  # N p/p, Axes, Marks, Quantity, Number of files
                         cell.alignment = Alignment(horizontal='center')
-                    elif col == 2:  # Дата
+                    elif col == 2:  # Date
                         cell.alignment = Alignment(horizontal='center')
-                    elif col in [3, 6, 7, 8, 9, 10, 11, 12]:  # Текстовые поля
+                    elif col in [3, 8, 9, 10, 11, 12, 13, 14]:  # Text fields
                         cell.alignment = Alignment(horizontal='left', wrap_text=True)
 
                 current_row += 1
 
             # Автоподбор ширины столбцов
             column_widths = [
-                8,  # № п/п
-                12,  # Дата доставки
-                40,  # Наименование деталей, материалов...
-                10,  # Кол-во
-                10,  # Ед. изм.
-                20,  # Поставщик
-                25,  # Наименование и номер документа изготовителя
-                50,  # Результат проверки сопроводительных документов...
-                15,  # Решение о необходимости проведения лабораторного контроля
-                20,  # Результат лабораторного контроля
-                20,  # Исполнитель
-                20,  # Подрядчик
-                12,  # Количество файлов
-                20  # Создано
+                8,   # N p/p
+                12,  # Date of delivery
+                40,  # Name of parts, materials...
+                10,  # Axes
+                10,  # Marks
+                10,  # Quantity
+                10,  # Unit
+                20,  # Supplier
+                25,  # Name and number of manufacturer's document
+                50,  # Result of checking accompanying documents...
+                15,  # Decision on the need for laboratory control
+                20,  # Laboratory control result
+                20,  # Executor
+                20,  # Contractor
+                12,  # Number of files
+                20   # Created
             ]
 
             for col, width in enumerate(column_widths, 1):

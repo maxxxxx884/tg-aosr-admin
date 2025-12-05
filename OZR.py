@@ -57,7 +57,7 @@ class ProductionJournalEditor:
         tree_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
 
         # Столбцы таблицы
-        self.columns = ("Подрядчик", "Дата", "Наименование работ", "Объем", "Ед. изм.",
+        self.columns = ("Подрядчик", "Дата", "Наименование работ", "Оси", "Отметки", "Объем", "Ед. изм.",
                         "Фото", "Исполнитель", "Создано")
 
         # Соответствие столбцов ключам в данных
@@ -65,6 +65,8 @@ class ProductionJournalEditor:
             "Подрядчик": "contractor",
             "Дата": "date",
             "Наименование работ": "name",
+            "Оси": "axes",
+            "Отметки": "marks",
             "Объем": "volume",
             "Ед. изм.": "volume_unit",
             "Фото": "photos",
@@ -73,12 +75,12 @@ class ProductionJournalEditor:
         }
 
         # Редактируемые столбцы
-        self.editable_columns = {"Дата", "Наименование работ", "Объем", "Ед. изм.", "Исполнитель"}
+        self.editable_columns = {"Дата", "Наименование работ", "Оси", "Отметки", "Объем", "Ед. изм.", "Исполнитель"}
 
         self.tree = ttk.Treeview(tree_frame, columns=self.columns, show='headings', height=20)
 
         # Настройка заголовков и ширины столбцов
-        column_widths = [120, 100, 250, 80, 80, 80, 150, 150]
+        column_widths = [120, 100, 250, 80, 80, 80, 80, 80, 150, 150]
         for i, col in enumerate(self.columns):
             self.tree.heading(col, text=col, command=lambda c=col: self.sort_by_column(c))
             self.tree.column(col, width=column_widths[i])
@@ -170,6 +172,8 @@ class ProductionJournalEditor:
                 entry.get('contractor', ''),
                 entry.get('date', ''),
                 entry.get('name', ''),
+                entry.get('axes', ''),
+                entry.get('marks', ''),
                 entry.get('volume', ''),
                 entry.get('volume_unit', ''),
                 photo_text,
@@ -247,7 +251,7 @@ class ProductionJournalEditor:
 
             # Заголовки столбцов
             headers = [
-                "Дата", "Наименование работ", "Объем", "Единица измерения",
+                "Дата", "Наименование работ", "Оси", "Отметки", "Объем", "Единица измерения",
                 "Исполнитель", "Подрядчик", "Количество фото", "Создано"
             ]
 
@@ -277,6 +281,8 @@ class ProductionJournalEditor:
             for entry in sorted_data:
                 date_value = entry.get('date', '')
                 name_value = entry.get('name', '')
+                axes_value = entry.get('axes', '')
+                marks_value = entry.get('marks', '')
                 volume_value = entry.get('volume', '')
                 unit_value = entry.get('volume_unit', '')
                 executor_value = entry.get('filled_by', '')
@@ -290,6 +296,8 @@ class ProductionJournalEditor:
                 row_data = [
                     display_date,
                     name_value,
+                    axes_value,
+                    marks_value,
                     volume_value,
                     unit_value,
                     executor_value,
@@ -313,7 +321,7 @@ class ProductionJournalEditor:
                 current_row += 1
 
             # Автоподбор ширины столбцов
-            column_widths = [12, 35, 10, 15, 20, 20, 12, 20]
+            column_widths = [12, 35, 10, 10, 10, 15, 20, 20, 12, 20]
             for col, width in enumerate(column_widths, 1):
                 ws.column_dimensions[ws.cell(row=1, column=col).column_letter].width = width
 
